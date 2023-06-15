@@ -62,7 +62,6 @@ export const requestHandler = async (request, response) => {
       const usersEndpoint = usersPattern.exec(fullEndpoint);
       const id = usersEndpoint?.pathname?.groups?.id;
       const users = JSON.parse(readFileSync(usersFilePath, 'utf8'));
-
       switch (method) {
         case 'POST': {
           const body = await getRequestData(request);
@@ -74,11 +73,8 @@ export const requestHandler = async (request, response) => {
         }
 
         case 'GET': {
-          const usersPattern = /^\/users\/(\d+)$/;
-          const match = url.match(usersPattern);
-          if (match) {
-            const id = parseInt(match[1]);
-            const user = users.find((user) => user.id === id);
+          if (id) {
+            const user = users.find(user => user.id === parseInt(id));
             if (user) {
               sendJSONResponse(response, StatusCodes.OK, user);
             } else {
@@ -91,10 +87,7 @@ export const requestHandler = async (request, response) => {
         }
 
         case 'PATCH': {
-          const usersPattern = /^\/users\/(\d+)$/;
-          const match = url.match(usersPattern);
-          if (match) {
-            const id = parseInt(match[1]);
+          if (id) {
             const userIndex = users.findIndex(user => user.id === parseInt(id));
             if (userIndex !== -1) {
               const body = await getRequestData(request);
@@ -112,10 +105,7 @@ export const requestHandler = async (request, response) => {
         }
 
         case 'DELETE': {
-          const usersPattern = /^\/users\/(\d+)$/;
-          const match = url.match(usersPattern);
-          if (match) {
-            const id = parseInt(match[1]);
+          if (id) {
             const userIndex = users.findIndex(user => user.id === parseInt(id));
             if (userIndex !== -1) {
               const deletedUser = users[userIndex];
@@ -144,7 +134,6 @@ export const requestHandler = async (request, response) => {
       const postsEndpoint = postsPattern.exec(fullEndpoint);
       const id = postsEndpoint?.pathname?.groups?.id;
       const posts = JSON.parse(readFileSync(postsFilePath, 'utf8'));
-      console.log('id', id);
       switch (method) {
         case 'POST': {
           const body = await getRequestData(request);
@@ -156,11 +145,8 @@ export const requestHandler = async (request, response) => {
         }
 
         case 'GET': {
-          const postPattern = /^\/posts\/(\d+)$/;
-          const match = url.match(postPattern);
-          if (match) {
-            const id = parseInt(match[1]);
-            const post = posts.find((post) => post.post_id === id);
+          if (id) {
+            const post = posts.find(post=> post.post_id === parseInt(id));
             if (post) {
               sendJSONResponse(response, StatusCodes.OK, post);
             } else {
@@ -173,10 +159,7 @@ export const requestHandler = async (request, response) => {
         }
 
         case 'PATCH': {
-          const postPattern = /^\/posts\/(\d+)$/;
-          const match = url.match(postPattern);
-          if (match) {
-            const id = parseInt(match[1]);
+          if (id) {
             const postIndex = posts.findIndex(post => post.post_id === parseInt(id));
             if (postIndex !== -1) {
               const body = await getRequestData(request);
@@ -194,10 +177,7 @@ export const requestHandler = async (request, response) => {
         }
 
         case 'DELETE': {
-          const postPattern = /^\/posts\/(\d+)$/;
-          const match = url.match(postPattern);
-          if (match) {
-            const id = parseInt(match[1]);
+          if (id) {
             const postIndex = posts.findIndex(post => post.post_id === parseInt(id));
             if (postIndex !== -1) {
               const deletedPost = posts[postIndex];
