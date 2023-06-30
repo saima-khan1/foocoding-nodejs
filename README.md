@@ -18,7 +18,7 @@ This project consists of a Node.js CLI (command-line interface) and a server app
 
     cd foocoding-nodejs
 
-3. install dependencies
+3. install dependencies:
     npm install
 
 ## Starting the Server
@@ -26,6 +26,7 @@ This project consists of a Node.js CLI (command-line interface) and a server app
 
 2. Start the server:
     npm start run
+
 The server will start running on http://localhost:3000.
 
 Note: Keep the terminal running to keep the server running.
@@ -40,14 +41,23 @@ Replace [options] with the desired CLI options and arguments.
 Examples:
 
 - Retrieve all users:
+    
     node cli.js --resource users --method GET --all
+
 - Retrieve a specific user by ID:
+
     node cli.js --resource users --method GET --id 1
+
 - Add a new user:
+    
     node cli.js --resource users --method POST
+
 - Delete a user by ID:
+    
     node cli.js --resource users --method DELETE --id 1
+
 - Update a user by ID:
+    
     node cli.js --resource users --method PATCH --id 1
 
 3. Follow the prompts or provide the necessary input based on the command you executed.
