@@ -27,7 +27,7 @@ This project consists of a Node.js CLI (command-line interface) and a server app
 2. Start the server:
     npm start run
 
-The server will start running on http://localhost:3000.
+The server will start running on http://127.0.0.1:3000/.
 
 Note: Keep the terminal running to keep the server running.
 
