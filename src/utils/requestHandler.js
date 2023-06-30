@@ -65,12 +65,13 @@ export const requestHandler = async (request, response) => {
       switch (method) {
         case 'POST': {
           const body = await getRequestData(request);
-          const newUser = { id: users.length + 1, ...body };
+          const maxId = users.reduce((max, user) => (user.id > max ? user.id : max), 0);
+          const newUser = { id: maxId + 1, ...body };
           users.push(newUser);
           saveUsers(users);
           sendJSONResponse(response, StatusCodes.CREATED, newUser);
           break;
-        }
+        }        
 
         case 'GET': {
           if (id) {
@@ -137,7 +138,8 @@ export const requestHandler = async (request, response) => {
       switch (method) {
         case 'POST': {
           const body = await getRequestData(request);
-          const newPost = { id: posts.length + 1, ...body };
+          const maxId = posts.reduce((max, post) => (post.post_id > max ? post.post_id : max), 0);
+          const newPost = { post_id: maxId + 1, ...body };
           posts.push(newPost);
           savePosts(posts);
           sendJSONResponse(response, StatusCodes.CREATED, newPost);

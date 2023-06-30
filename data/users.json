@@ -3,7 +3,7 @@
     "id": 1,
     "first_name": "Elton",
     "last_name": "Avard",
-    "email": "eavard0@themeforest.net",
+    "email": "alton@mail.com",
     "gender": "Male"
   },
   {
@@ -145,5 +145,42 @@
     "last_name": "khan",
     "email": "saima@yahoo.com",
     "gender": "Female"
+  },
+  {
+    "id": 22,
+    "name": "azaan",
+    "email": "azaan@mail.com",
+    "first_name": "azaan",
+    "last_name": "kalaburgi",
+    "gender": "male"
+  },
+  {
+    "id": 23,
+    "name": "Hamdan",
+    "email": "hamdan@gmail.com",
+    "first_name": "hamdan",
+    "last_name": "kalaburgi",
+    "gender": "male"
+  },
+  {
+    "id": 25,
+    "first_name": "joahn",
+    "last_name": "deer",
+    "email": "joahn@mail.com",
+    "gender": "male"
+  },
+  {
+    "id": 26,
+    "first_name": "maxine",
+    "last_name": "bruno",
+    "email": "maxine@mail.com",
+    "gender": "female"
+  },
+  {
+    "id": 27,
+    "first_name": "newuser",
+    "last_name": "newlastname",
+    "email": "new@mail.com",
+    "gender": "female"
   }
 ]

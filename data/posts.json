@@ -1,16 +1,5 @@
 [
   {
-    "post_id": 1,
-    "user_id": 1,
-    "post_text": "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\n\nSed ante. Vivamus tortor. Duis mattis egestas metus.",
-    "post_date": "2/6/2021",
-    "likes": 98810,
-    "comments": 9696,
-    "hashtags": "#followme",
-    "location": "Fanhu",
-    "post_image": "https://robohash.org/rerumautea.png?size=50x50&set=set1"
-  },
-  {
     "post_id": 2,
     "user_id": 2,
     "post_text": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.\n\nMaecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\n\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.",
@@ -210,13 +199,81 @@
   },
   {
     "post_id": 20,
-    "user_id": 20,
-    "post_text": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.\n\nNullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.\n\nIn quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.",
-    "post_date": "3/7/2021",
-    "likes": 58514,
-    "comments": 6258,
+    "user_id": "20",
+    "post_text": "hello",
+    "post_date": "21/09/2019",
+    "likes": "500",
+    "comments": "60",
     "hashtags": "#picoftheday",
-    "location": "Béthune",
+    "location": "drtsres",
+    "post_image": "https://robohash.org/laboriosamfugitodit.png?size=50x50&set=set1",
+    "hastags": "hhfgd",
+    "postImage": "jftdr"
+  },
+  {
+    "id": 1,
+    "user_id": "21",
+    "post_text": "saima",
+    "post_date": "21/09/2017",
+    "likes": "600",
+    "comments": "222",
+    "hastags": "44",
+    "location": "",
+    "post_image": ""
+  },
+  {
+    "id": 2,
+    "user_id": "22",
+    "post_text": "testing",
+    "post_date": "21/09/2022",
+    "likes": "100",
+    "comments": "100",
+    "hastags": "#testing",
+    "location": "helsingborg",
     "post_image": "https://robohash.org/laboriosamfugitodit.png?size=50x50&set=set1"
+  },
+  {
+    "id": 3,
+    "user_id": "23",
+    "post_text": "test",
+    "post_date": "21/10/2022",
+    "likes": "50",
+    "comments": "50",
+    "hastags": "#test",
+    "location": "helsingborg",
+    "post_image": "https://robohash.org/laboriosamfugitodit.png?size=50x50&set=set1"
+  },
+  {
+    "id": 4,
+    "user_id": "24",
+    "post_text": "testing again",
+    "post_date": "21/09/2022",
+    "likes": "1",
+    "comments": "1",
+    "hastags": "#testssss",
+    "location": "sweden",
+    "post_image": ""
+  },
+  {
+    "id": 5,
+    "user_id": 2001,
+    "post_text": " Vivamus tortor. Duis mattis egestas metus.",
+    "post_date": "2/6/2021",
+    "likes": 98810,
+    "comments": 9696,
+    "hashtags": "#followme",
+    "location": "Fanhu",
+    "post_image": "https://robohash.org/rerumautea.png?size=50x50&set=set1"
+  },
+  {
+    "post_id": 21,
+    "user_id": "233",
+    "post_text": "testing",
+    "post_date": "12/03/2022",
+    "likes": "100",
+    "comments": "1000",
+    "hastags": "#fixing",
+    "location": "sweden",
+    "post_image": ""
   }
 ]
